@@ -1,0 +1,4 @@
+-- Decrepit Watcher - 47546
+UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501727;
+UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501728;
+UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501729;
