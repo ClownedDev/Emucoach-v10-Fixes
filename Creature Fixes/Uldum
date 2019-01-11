@@ -2,5 +2,5 @@
 UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501727;
 UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501728;
 UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501729;
-
+-- Decrepit Watcher - 47546 Thanks to Ovahlord
 UPDATE `creature_template` SET `InhabitType`= 4, `flags_extra`= 2 WHERE `entry`= 47546;
