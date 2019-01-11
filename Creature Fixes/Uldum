@@ -1,6 +1,8 @@
 -- Decrepit Watcher - 47546
-UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501727;
-UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501728;
-UPDATE `emucoach_v10_vip_world`.`creature` SET `MovementType`='0' WHERE  `guid`=501729;
+UPDATE `creature` SET `MovementType`='0' WHERE  `guid`=501727;
+UPDATE `creature` SET `MovementType`='0' WHERE  `guid`=501728;
+UPDATE `creature` SET `MovementType`='0' WHERE  `guid`=501729;
 -- Decrepit Watcher - 47546 Thanks to Ovahlord
 UPDATE `creature_template` SET `InhabitType`= 4, `flags_extra`= 2 WHERE `entry`= 47546;
+-- Can't select/attack Decrepit Watcher
+UPDATE `creature_template` SET `unit_flags`='33554432' WHERE  `entry`=47546;
