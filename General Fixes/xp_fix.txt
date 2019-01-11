@@ -1,10 +1,11 @@
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 813000 WHERE `Level`= 70;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 821000 WHERE `Level`= 71;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 830000 WHERE `Level`= 72;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 838000 WHERE `Level`= 73;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 847000 WHERE `Level`= 74;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 855000 WHERE `Level`= 75;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 865000 WHERE `Level`= 76;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 873000 WHERE `Level`= 77;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 882000 WHERE `Level`= 78;
-UPDATE `player_xp_for_level` SET `xp_for_next_level`= 891000 WHERE `Level`= 79;
+-- Credits to Ovahlord for the fix
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 855000 WHERE `lvl`= 75;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 865000 WHERE `lvl`= 76;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 873000 WHERE `lvl`= 77;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 882000 WHERE `lvl`= 78;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 891000 WHERE `lvl`= 79;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 813000 WHERE `lvl`= 70;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 821000 WHERE `lvl`= 71;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 830000 WHERE `lvl`= 72;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 838000 WHERE `lvl`= 73;
+UPDATE `player_xp_for_level` SET `xp_for_next_level`= 847000 WHERE `lvl`= 74;
