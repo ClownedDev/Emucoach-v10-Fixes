@@ -1,0 +1,2 @@
+-- Fix mount appearnce for Stratholme Resident Specimen (Credits: https://github.com/Ovahlord/TrinityCore/commit/f87450f6386841676ece5972734e5ed7b0a6f10d)
+UPDATE `creature_addon` SET `mount`=14583, `auras`=34712 WHERE `guid` IN (45510,67325)
