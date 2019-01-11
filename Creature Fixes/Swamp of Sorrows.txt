@@ -1,0 +1,2 @@
+-- Fix Sorrow Spinner holding a weapon.
+UPDATE `creature_equip_template` SET `itemEntry1`='0' WHERE  `entry`=858 AND `id`=1;
