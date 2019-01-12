@@ -1,0 +1,7 @@
+-- Added in Delios Silverblade warrior trainer and fixed equipment.
+UPDATE `creature_equip_template` SET `itemEntry1`='23225', `itemEntry2`='24332' WHERE  `entry`=43010 AND `id`=1;
+DELETE FROM `creature` WHERE `guid`=879134;
+INSERT INTO `creature` (`guid`, `id`, `map`, `zone`, `area`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `walkmode`, `saiscriptflag`) VALUES (879134, 43010, 530, 3430, 3431, 1, 1, 0, 43010, 10381.3, -6422.6, 38.5318, 2.52449, 300, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0);
+--Added in Sunspire Mailbox
+DELETE FROM `gameobject` WHERE `guid`=10038974;
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zone`, `area`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) VALUES (10038974, 182359, 530, 3430, 3431, 1, 1, 10354.3, -6370.68, 36.0873, 2.01585, 0, 0, 0.845727, 0.533616, 300, 0, 1);
