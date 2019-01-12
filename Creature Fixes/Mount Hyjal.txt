@@ -17,11 +17,15 @@ UPDATE `creature_template` SET `Health_mod`='0.9999865382' WHERE  `entry`=38926;
 -- Twilight Vanquisher HP Fix - 38913
 UPDATE `creature_template` SET `Health_mod`='.9999892' WHERE  `entry`=38913;
 
--- Scalding Rock Elemental HP Fix
+-- Scalding Rock Elemental HP Fix - 40229
 UPDATE `creature_template` SET `Health_mod`='.999989' WHERE  `entry`=40229;
 
--- Twilight Overseer HP Fix
+-- Twilight Overseer HP Fix - 40123
 UPDATE `creature_template` SET `Health_mod`='1.00022885' WHERE  `entry`=40123;
 
--- Nightmare Terror HP Fix
+-- Nightmare Terror HP Fix - 40134
 UPDATE `creature_template` SET `Health_mod`='.999989' WHERE  `entry`=40134;
+
+-- Twilight Assassin  HP Fix - 38951
+UPDATE `creature_template` SET `Health_mod`='.999989' WHERE  `entry`=38951;
+
