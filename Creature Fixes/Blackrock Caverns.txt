@@ -1,0 +1,2 @@
+-- These should correct Twilight Flame Caller's weapon id
+UPDATE `creature_equip_template` SET `itemEntry1`='49653' WHERE  `entry`=39708 AND `id`=1;

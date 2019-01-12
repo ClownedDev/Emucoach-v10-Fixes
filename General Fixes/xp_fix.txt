@@ -1,4 +1,3 @@
--- Credits to Ovahlord for the fix
 UPDATE `player_xp_for_level` SET `xp_for_next_level`= 1074814  WHERE `lvl`= 75;
 UPDATE `player_xp_for_level` SET `xp_for_next_level`= 1085869  WHERE `lvl`= 76;
 UPDATE `player_xp_for_level` SET `xp_for_next_level`= 1097058  WHERE `lvl`= 77;

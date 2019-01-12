@@ -1,0 +1,9 @@
+-- Gives Captian Taylor the correct weapon - 50270
+INSERT INTO `creature_equip_template` (`entry`, `id`, `itemEntry1`) VALUES ('50270', '1', '45951');
+-- Gives dead Naz'Jar Invader correct weapon - 50278
+INSERT INTO `creature_equip_template` (`entry`, `id`, `itemEntry1`) VALUES ('50278', '1', '34058');
+-- Gives dead Naz'Jar Spiritmender correct weapon - 50276
+INSERT INTO `creature_equip_template` (`entry`, `id`, `itemEntry1`) VALUES ('50276', '1', '58871');
+-- Captain Taylor now plays the correct emote & position fixed
+INSERT INTO `creature_template_addon` (`entry`, `emote`) VALUES ('50270', '375');
+UPDATE `creature` SET `position_x`='-614.138', `position_y`='808.341', `position_z`='245.06', `orientation`='3.11712' WHERE  `guid`=161996;

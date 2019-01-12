@@ -1,0 +1,6 @@
+-- Through the Dream
+After accepting Through the Dream, Arch Druid Fandral Staghelm(40180) starts to follow you as usual, but there's the same NPC still standing in the same spot. Not sure if this has to do with phasing or not.
+https://imgur.com/a/a33VtaV
+
+If you Abandon the quest,  Arch Druid Fandral Staghelm doesn't stop following you and the green affect doesn't disappear. If you re-accept the quest, you just get another npc  that follows you.
+https://imgur.com/a/tmyJX55

@@ -1,0 +1,27 @@
+-- Toron Rockhoof emote and object spawns + locations
+INSERT INTO `creature_addon` (`guid`, `emote`) VALUES ('177964', '173');
+DELETE FROM `gameobject` WHERE `guid`=10038857;
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zone`, `area`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) VALUES (10038857, 204118, 1, 616, 5038, 1, 16383, 5570.29, -3601.59, 1570.6, 1.32645, 0, 0, 0.615661, 0.788011, 300, 255, 1);
+DELETE FROM `gameobject` WHERE `guid`=10038858;
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zone`, `area`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) VALUES (10038858, 204119, 1, 616, 5038, 1, 1, 5570.96, -3598.41, 1570.6, -0.855211, 0, 0, -0.414693, 0.909962, 300, 255, 1);
+
+-- Unbound Flame Spirit HP Fix - 40080
+UPDATE `creature_template` SET `Health_mod`='0.125' WHERE  `entry`=40080;
+
+-- Blazebound Elemental HP FIX - 38896
+UPDATE `creature_template` SET `Health_mod`='6', `Mana_mod`='1' WHERE  `entry`=38896;
+
+-- Twilight Flamecaller HP Fix - 38926
+UPDATE `creature_template` SET `Health_mod`='0.9999865382' WHERE  `entry`=38926;
+
+-- Twilight Vanquisher HP Fix - 38913
+UPDATE `creature_template` SET `Health_mod`='.9999892' WHERE  `entry`=38913;
+
+-- Scalding Rock Elemental HP Fix
+UPDATE `creature_template` SET `Health_mod`='.999989' WHERE  `entry`=40229;
+
+-- Twilight Overseer HP Fix
+UPDATE `creature_template` SET `Health_mod`='1.00022885' WHERE  `entry`=40123;
+
+-- Nightmare Terror HP Fix
+UPDATE `creature_template` SET `Health_mod`='.999989' WHERE  `entry`=40134;
