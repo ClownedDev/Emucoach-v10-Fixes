@@ -1,0 +1,83 @@
+-- Corrected fomations for entry: 39436 DB GUID: 178010
+DELETE FROM `creature_formations` WHERE `memberGUID`=508215;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178010, 508215, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508216;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178010, 508216, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508217;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178010, 508217, 5, 45, 515, 0, 0);
+
+-- Corrected fomations for entry: 39436 DB GUID: 177447
+DELETE FROM `creature_formations` WHERE `memberGUID`=508224;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177447, 508224, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508225;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177447, 508225, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508226;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177447, 508226, 5, 45, 515, 0, 0);
+
+-- Corrected fomations for entry: 39436 DB GUID: 177491
+DELETE FROM `creature_formations` WHERE `memberGUID`=508221;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177491, 508221, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508222;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177491, 508222, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508223;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177491, 508223, 5, 45, 515, 0, 0);
+
+
+-- Corrected fomations for entry: 39436 DB GUID: 177451
+DELETE FROM `creature_formations` WHERE `memberGUID`=508218;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177451, 508218, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508219;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177451, 508219, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508220;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177451, 508220, 5, 45, 515, 0, 0);
+
+
+-- Corrected fomations for entry: 39436 DB GUID: 177426
+DELETE FROM `creature_formations` WHERE `memberGUID`=508215;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177426, 508215, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508216;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177426, 508216, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508217;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177426, 508217, 5, 45, 515, 0, 0);
+
+
+-- Corrected fomations for entry: 39436 DB GUID: 177499
+DELETE FROM `creature_formations` WHERE `memberGUID`=508212;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177499, 508212, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508213;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177499, 508213, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508214;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177499, 508214, 5, 45, 515, 0, 0);
+
+
+-- Corrected fomations for entry: 39436 DB GUID: 178169
+DELETE FROM `creature_formations` WHERE `memberGUID`=508203;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178169, 508203, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508204;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178169, 508204, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508205;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178169, 508205, 5, 45, 515, 0, 0);
+
+-- Corrected fomations for entry: 39436 DB GUID: 178220
+DELETE FROM `creature_formations` WHERE `memberGUID`=508206;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178220, 508206, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508207;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178220, 508207, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508208;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (178220, 508208, 5, 45, 515, 0, 0);
+
+-- Corrected fomations for entry: 39436 DB GUID: 177484
+DELETE FROM `creature_formations` WHERE `memberGUID`=508198;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177484, 508198, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508199;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177484, 508199, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508200;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (177484, 508200, 5, 45, 515, 0, 0);
+
+-- Corrected fomations for entry: 39436 DB GUID: 508193
+DELETE FROM `creature_formations` WHERE `memberGUID`=508195;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (508193, 508195, 5, 0, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508196;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (508193, 508196, 5, 330, 515, 0, 0);
+DELETE FROM `creature_formations` WHERE `memberGUID`=508197;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (508193, 508197, 5, 45, 515, 0, 0);

@@ -1,0 +1,75 @@
+/* Credits to Ovahlord. Commit here: https://github.com/Ovahlord/TrinityCore/commit/847dd8d177667ffd65ebb4147f4ba59efb22fdae*/
+
+-- Pathing for  Entry: 43662 'TDB FORMAT' 
+SET @NPC := 104039;
+SET @PATH := @NPC * 10;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=1024.542,`position_y`=849.5343,`position_z`=298.6647 WHERE `guid`=@NPC;
+DELETE FROM `creature_addon` WHERE `guid`=@NPC;
+INSERT INTO `creature_addon` (`guid`,`path_id`,`mount`,`bytes1`,`bytes2`,`emote`,`auras`) VALUES (@NPC,@PATH,0,0,1,0, '');
+DELETE FROM `waypoint_data` WHERE `id`=@PATH;
+INSERT INTO `waypoint_data` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`delay`,`move_type`,`action`,`action_chance`,`wpguid`) VALUES
+(@PATH,1,971.488,880.601,305.9347,0,0,1,0,100,0),
+(@PATH,2,971.431,894.707,306.6,0,0,1,0,100,0),
+(@PATH,3,983.392,904.229,306.2977,0,0,1,0,100,0),
+(@PATH,4,1007.39,883.028,301.3122,0,0,1,0,100,0),
+(@PATH,5,1038.13,881.785,297.10,1,0,1,0,100,0),
+(@PATH,6,1029.69,851.0083,298.0182,0,0,1,0,100,0),
+(@PATH,7,994.264,861.425,301.936,0,0,1,0,100,0);
+
+ DELETE FROM `creature_formations` WHERE `leaderGUID`= 104039;
+INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES
+(104039, 104039, 0, 0, 515, 0, 0),
+(104039, 106077, 3, 315, 515, 0, 0),
+(104039, 102413, 4, 360, 515, 0, 0),
+(104039, 102411, 3, 45, 515, 0, 0);
+
+-- Pathing for  Entry: 42810 'TDB FORMAT' 
+SET @NPC := 169225;
+SET @PATH := @NPC * 10;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=1181.825,`position_y`=1069.069,`position_z`=264.2993 WHERE `guid`=@NPC;
+DELETE FROM `creature_addon` WHERE `guid`=@NPC;
+INSERT INTO `creature_addon` (`guid`,`path_id`,`mount`,`bytes1`,`bytes2`,`emote`,`auras`) VALUES (@NPC,@PATH,0,0,1,0, '');
+DELETE FROM `waypoint_data` WHERE `id`=@PATH;
+INSERT INTO `waypoint_data` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`delay`,`move_type`,`action`,`action_chance`,`wpguid`) VALUES
+(@PATH,1,1181.825,1069.069,264.2993,0,0,0,0,100,0),
+(@PATH,2,1183.867,1087.719,263.8982,0,0,0,0,100,0),
+(@PATH,3,1187.34,1063.681,263.3675,0,0,0,0,100,0),
+(@PATH,4,1187.34,1063.681,263.3675,5.602507,6000,0,0,100,0),
+(@PATH,5,1156.91,1047.903,265.4753,0,0,0,0,100,0);
+-- 0x2030A45AA029CE8000298500002EC493 .go xyz 1181.825 1069.069 264.2993
+
+ -- Pathing for  Entry: 42810 'TDB FORMAT' 
+SET @NPC := 169263;
+SET @PATH := @NPC * 10;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=1117.345,`position_y`=1014.186,`position_z`=266.6829 WHERE `guid`=@NPC;
+DELETE FROM `creature_addon` WHERE `guid`=@NPC;
+INSERT INTO `creature_addon` (`guid`,`path_id`,`mount`,`bytes1`,`bytes2`,`emote`,`auras`) VALUES (@NPC,@PATH,0,0,1,0, '');
+DELETE FROM `waypoint_data` WHERE `id`=@PATH;
+INSERT INTO `waypoint_data` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`delay`,`move_type`,`action`,`action_chance`,`wpguid`) VALUES
+(@PATH,1,1117.345,1014.186,266.6829,0,0,0,0,100,0),
+(@PATH,2,1136.958,1026.087,267.018,0,0,0,0,100,0),
+(@PATH,3,1117.345,1014.186,266.6829,0,0,0,0,100,0),
+(@PATH,4,1091.625,992.7847,264.373,0,0,0,0,100,0),
+(@PATH,5,1069.092,963.934,260.1193,0,0,0,0,100,0),
+(@PATH,6,1091.625,992.7847,264.373,0,0,0,0,100,0);
+-- 0x2030A45AA029CE800029850000AEC493 .go xyz 1117.345 1014.186 266.6829
+
+ -- Pathing for  Entry: 42810 'TDB FORMAT' 
+SET @NPC := 169226;
+SET @PATH := @NPC * 10;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=1150.245,`position_y`=929.8108,`position_z`=284.7753 WHERE `guid`=@NPC;
+DELETE FROM `creature_addon` WHERE `guid`=@NPC;
+INSERT INTO `creature_addon` (`guid`,`path_id`,`mount`,`bytes1`,`bytes2`,`emote`,`auras`) VALUES (@NPC,@PATH,0,0,1,0, '');
+DELETE FROM `waypoint_data` WHERE `id`=@PATH;
+INSERT INTO `waypoint_data` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`delay`,`move_type`,`action`,`action_chance`,`wpguid`) VALUES
+(@PATH,1,1150.245,929.8108,284.7753,0,0,0,0,100,0),
+(@PATH,2,1149.689,946.9427,283.7964,0,0,0,0,100,0),
+(@PATH,3,1152.821,963.9549,282.9501,0,0,0,0,100,0),
+(@PATH,4,1160.462,974.0677,279.9007,0,0,0,0,100,0),
+(@PATH,5,1170.483,995.6285,273.9234,0,0,0,0,100,0),
+(@PATH,6,1163.292,1017.347,269.8757,0,0,0,0,100,0),
+(@PATH,7,1170.483,995.6285,273.9234,0,0,0,0,100,0),
+(@PATH,8,1160.508,974.1669,279.8546,0,0,0,0,100,0),
+(@PATH,9,1152.821,963.9549,282.9501,0,0,0,0,100,0),
+(@PATH,10,1149.689,946.9427,283.7964,0,0,0,0,100,0);
+-- 0x2030A45AA029CE8000298500012EC493 .go xyz 1150.245 929.8108 284.7753
