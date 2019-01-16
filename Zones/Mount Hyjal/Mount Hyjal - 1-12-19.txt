@@ -81,3 +81,11 @@ DELETE FROM `creature_formations` WHERE `memberGUID`=508196;
 INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (508193, 508196, 5, 330, 515, 0, 0);
 DELETE FROM `creature_formations` WHERE `memberGUID`=508197;
 INSERT INTO `creature_formations` (`leaderGUID`, `memberGUID`, `dist`, `angle`, `groupAI`, `point_1`, `point_2`) VALUES (508193, 508197, 5, 45, 515, 0, 0);
+
+-- Health correction for Twilight Hunter - 39437
+UPDATE `creature_template` SET `HealthModifier`='.6666594' WHERE  `entry`=39437;
+
+UPDATE `creature_template` SET `HealthModifier`='.6666594' WHERE  `entry`=39436;
+
+-- Twilight Slavedrive SAI fix
+DELETE FROM `smart_scripts` WHERE  `entryorguid`=39438 AND `source_type`=0 AND `id`=0 AND `link`=0;

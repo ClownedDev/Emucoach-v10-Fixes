@@ -1,0 +1,2 @@
+-- Delete Event Generator 001 - 2334
+DELETE FROM `creature` WHERE  `guid`=34029;

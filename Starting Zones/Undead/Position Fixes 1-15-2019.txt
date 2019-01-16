@@ -1,0 +1,2 @@
+-- Fixes Agatha's position so players can accept quest
+UPDATE `creature` SET `position_x`='1700.2', `position_y`='1703.336', `position_z`='137.198', `orientation`='1.67552' WHERE  `guid`=509454;

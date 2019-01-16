@@ -1,0 +1,3 @@
+-- Removes SAI from Sathiel (16261) and resolves issue with multiple pickups.
+DELETE FROM `smart_scripts` WHERE `entryorguid`=16261 AND `source_type`=0 AND `id`=0 AND `link`=0;
+UPDATE `emucoach_v10_vip_world`.`creature_template` SET `AIName`='' WHERE  `entry`=16261;
