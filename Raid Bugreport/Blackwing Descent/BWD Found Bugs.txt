@@ -1,0 +1,111 @@
+Lord Victor Nefarius
+	- Once you enter the raid, Lord Victor Nefarius is in the wrong position, doesn't say the right text and he casts a spell on you it seems like? Also he is supposed to teleport in and out of the gate. You can take a look at how this works here: https://www.youtube.com/watch?v=_c7TaZ2DNYQ
+
+Maimgor, Ivoroc & Pyrecraw
+	- I believe these npcs are supposed to be sleeping/flying around the place.
+	-- Fix for flying (not pathing) - Pyrecraw
+	UPDATE `creature_template` SET `InhabitType`='4' WHERE  `entry`=42764;
+	INSERT INTO `creature_template_addon` (`entry`, `bytes1`, `bytes2`) VALUES ('42764', '50331648', '1');
+	-- Fix for flying (not pathing) - Maimgor
+	UPDATE `creature_template` SET `InhabitType`='4' WHERE  `entry`=42768;
+	INSERT INTO `creature_template_addon` (`entry`, `bytes1`, `bytes2`) VALUES ('42768', '50331648', '1');
+	-- Fix for flying (not pathing) - Ivoroc
+	INSERT INTO `creature_template_addon` (`entry`, `bytes1`, `bytes2`) VALUES ('42767', '50331648', '1');
+
+Trash Mobs
+    - Trash mobs don't seem to have waypoints/pathing. This should do the trick.
+    	-- Pathing for Drakonid Slayer Entry: 42802 'TDB FORMAT' 
+		SET @NPC := 173080;
+		SET @PATH := @NPC * 10;
+		UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-58.55208,`position_y`=-146.7934,`position_z`=63.61993 WHERE `guid`=@NPC;
+		DELETE FROM `creature_addon` WHERE `guid`=@NPC;
+		INSERT INTO `creature_addon` (`guid`,`path_id`,`mount`,`bytes1`,`bytes2`,`emote`,`auras`) VALUES (@NPC,@PATH,0,0,1,0, '');
+		DELETE FROM `waypoint_data` WHERE `id`=@PATH;
+		INSERT INTO `waypoint_data` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`delay`,`move_type`,`action`,`action_chance`,`inverse_formation_angle`,`wpguid`) VALUES
+		(@PATH,1,-58.55208,-146.7934,63.61993,0,0,0,0,100,0,0),
+		(@PATH,2,-49.15278,-154.2222,63.5876,0,0,0,0,100,0,0),
+		(@PATH,3,-38.97743,-165.0486,63.60661,0,0,0,0,100,0,0),
+		(@PATH,4,-28.82639,-177.2483,63.61633,0,0,0,0,100,0,0),
+		(@PATH,5,-23.15278,-189.2934,63.67587,0,0,0,0,100,0,0),
+		(@PATH,6,-16.60243,-203.5608,63.37911,0,0,0,0,100,0,0),
+		(@PATH,7,-13.19097,-217.3576,63.49108,0,0,0,0,100,0,0),
+		(@PATH,8,-16.60243,-203.5608,63.37911,0,0,0,0,100,0,0),
+		(@PATH,9,-23.15278,-189.2934,63.67587,0,0,0,0,100,0,0),
+		(@PATH,10,-28.82639,-177.2483,63.61633,0,0,0,0,100,0,0),
+		(@PATH,11,-38.97743,-165.0486,63.60661,0,0,0,0,100,0,0),
+		(@PATH,12,-49.15278,-154.2222,63.5876,0,0,0,0,100,0,0);
+	
+		DELETE FROM `creature_formations` WHERE `leaderGUID` = 173080;
+		INSERT INTO `creature_formations` (`leaderGUID`,`memberGUID`,`dist`,`angle`,`groupAI`,`point_1`,`point_2`) VALUES
+		(173080,173080,0,0,2,0,0),
+		(173080,172993,6,300,2,1,7),
+		(173080,173079,6,60,2,1,7);
+
+
+		-- Pathing for Drakonid Slayer Entry: 42802 'TDB FORMAT' 
+		SET @NPC := 173081;
+		SET @PATH := @NPC * 10;
+		UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-55.96875,`position_y`=-299.4462,`position_z`=63.65685 WHERE `guid`=@NPC;
+		DELETE FROM `creature_addon` WHERE `guid`=@NPC;
+		INSERT INTO `creature_addon` (`guid`,`path_id`,`mount`,`bytes1`,`bytes2`,`emote`,`auras`) VALUES (@NPC,@PATH,0,0,1,0, '');
+		DELETE FROM `waypoint_data` WHERE `id`=@PATH;
+		INSERT INTO `waypoint_data` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`delay`,`move_type`,`action`,`action_chance`,`inverse_formation_angle`,`wpguid`) VALUES
+		(@PATH,1,-55.96875,-299.4462,63.65685,0,0,0,0,100,0,0),
+		(@PATH,2,-47.11806,-293.8333,63.58841,0,0,0,0,100,0,0),
+		(@PATH,3,-40.125,-286.4496,63.59059,0,0,0,0,100,0,0),
+		(@PATH,4,-33.0434,-277.9757,63.59935,0,0,0,0,100,0,0),
+		(@PATH,5,-27.32465,-267.566,63.57638,0,0,0,0,100,0,0),
+		(@PATH,6,-21.69965,-257.3871,63.57293,0,0,0,0,100,0,0),
+		(@PATH,7,-19.23785,-249.0052,63.49329,0,0,0,0,100,0,0),
+		(@PATH,8,-16.08681,-235.8368,63.35617,0,0,0,0,100,0,0),
+		(@PATH,9,-19.23785,-249.0052,63.49329,0,0,0,0,100,0,0),
+		(@PATH,10,-21.69965,-257.3871,63.57293,0,0,0,0,100,0,0),
+		(@PATH,11,-27.32465,-267.566,63.57638,0,0,0,0,100,0,0),
+		(@PATH,12,-33.0434,-277.9757,63.59935,0,0,0,0,100,0,0),
+		(@PATH,13,-40.125,-286.4496,63.59059,0,0,0,0,100,0,0),
+		(@PATH,14,-47.11806,-293.8333,63.58841,0,0,0,0,100,0,0);
+
+		DELETE FROM `creature_formations` WHERE `leaderGUID` = 173081;
+		INSERT INTO `creature_formations` (`leaderGUID`,`memberGUID`,`dist`,`angle`,`groupAI`,`point_1`,`point_2`) VALUES
+		(173081,173081,0,0,2,0,0),
+		(173081,172837,6,300,2,1,7),
+		(173081,172836,6,60,2,1,7);
+
+
+
+
+Omnotron Defense System
+	- Once the player dies and the boss encounter resets, the sentinels are supposed to go back to their original position, but they don't. They start walking back to it but then they stop and turn into a statue again.
+	- When engaing in-combat with the Sentinel's, their health drops to 115-116k hp for some reason. And sometimes their bar that triggers the next Sentinel is 0 (visual or actual?).
+
+	- Arcanotron & Magmatron spawn locations are incorrect. Here's an update to fix their position:
+	-- Arcanotron Position Correction - 42166
+	UPDATE `creature` SET `position_x`='-315.303', `position_y`='-410.204', `position_z`='213.987', `orientation`='1.88384' WHERE  `guid`=172650;
+	-- Magmatron Position Correction - 42178
+	UPDATE `creature` SET `position_x`='-308.931', `position_y`='-404.617', `position_z`='214.001', `orientation`='1.91137' WHERE  `guid`=172648;
+	- Jumpotron Gameobject position is incorrection & wrong orientation. This should do the trick: 
+	-- Jumpotron Position Fix
+	UPDATE `gameobject` SET `position_x`='-324.769', `position_y`='-416.404', `position_z`='213.889', `orientation`='3.07913' WHERE  `guid`=254308;
+
+	- Whenever there's a sentinel about to be activivated, there's usually a beam that shoots at it, but in this case there is no beam for some reason, but instead some floating aura thing.
+If you'd like to take a look at the fight and see how it's supposed to work, then click the link: https://www.youtube.com/watch?v=XFibqDGTezg
+
+Magmaw
+	- Seems like there is a trigger NPC visible to the players. 
+	- Lava Parasites seem to not infect players with Parasitic Infection(https://www.wowhead.com/spell=78941/parasitic-infection)
+	- Lava Pareaties seem to change size whenever they spawn in (get smaller)
+	- Once Magmaw drops the player after using mangle, I believe the player is supposed to drop in front of Magmaw instead of inside of him.
+
+Maloriak
+	- Initial Spawn Position seems to be off a little.
+	- Health Values for summoned creatures seem to be off
+	- Prime Subjects are laying down when they're spawned in (they look dead)
+	- Seems like he casts his spells to often.
+	- When releasing abberations, Maloriak is supposed to summon 3 of them, but instead summons more than 3
+If you'd like to take a look at the fight and see how it's supposed to work, then click the link: https://www.youtube.com/watch?v=kW3GYLPoz2E
+
+Maimgor, Ivoroc & Pyrecraw
+	- I believe these npcs are supposed to be sleeping/flying around the place.
+
+Trash Mobs
+ - Trash mobs don't seem to have waypoints/pathing.
